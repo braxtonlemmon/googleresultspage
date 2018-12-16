@@ -5,14 +5,16 @@ html {
     display: block;
 }
 
-p { 
-    margin: 0;
-    padding: 0;
-}
 
 /*Header*/
 header {
     display: flex;
+}
+
+
+p { 
+    margin: 0;
+    padding: 0;
 }
 
 header div {
@@ -410,9 +412,10 @@ h2 {
 .q img {
     height: 12px;
     width: 12px;
-    right: 42px;
-    position: absolute;
+    float: right;
+    position: relative;
     color: gray;
+    margin-right: 10px;
 }
 
 .questionsfeedback {
@@ -443,4 +446,97 @@ h2 {
     text-align: left;
 }
 
+.related h3 {
+    color: #222;
+    height: auto;
+    padding-bottom: 12px;
+}
+
+.related h3:hover {
+    text-decoration: none;
+    cursor: text;
+
+}
+
+.related ul {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+}
+
+.related li {
+    color: #1a0dab;
+    cursor: pointer;
+    padding: 3px 40px 3px 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.related li:hover {
+    text-decoration: underline;
+}
+
+.morelogo {
+    margin: 30px 160px;
+}
+
+.morelogo img {
+    width: 350px;
+    height: 85px;
+}
 /*Footer*/
+
+footer {
+    background-color: #f2f2f2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.topfoot {
+    border-top: 1px solid #e4e4e4;
+    margin-left: 160px;
+    line-height: 40px;
+}
+
+.topone {
+    font-size: 15px;
+    color: rgba(0,0,0,0.54);
+}
+
+.toptwo {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #9e9e9e;
+    border-left: 1px solid #e4e4e4;
+    margin-left: 13px;
+}
+
+.topthree {
+    color: #5f6368;
+    cursor: pointer;
+
+}
+
+.bottomfoot {
+    margin-left: 133px;
+    line-height: 40px;
+}
+
+.bottomfoot {
+    color: #5f6368;
+    border-top: 1px solid #e4e4e4;
+}
+
+.bottomfoot a {
+    padding-left: 27px;
+    cursor: pointer;
+}
+
+.bottomfoot a:hover, .topthree:hover {
+    color: #333;
+}
